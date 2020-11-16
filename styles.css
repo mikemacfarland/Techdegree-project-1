@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #303534;
 }
 /* Link Styles */
 
@@ -56,25 +56,40 @@ a:hover {
 }
 
 header {
+  opacity: .75;
   text-align: center;
-  background: url('images/rocky\ mountains.jpg') no-repeat top center ;
+  background: url('images/rocky mountains.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+  
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
+  background-image: url('images/profile-pic-1.jpg');
   margin-top: 50px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border-radius: 15%;
+  border: 1.5px solid white;
+  transition: all 2s;
+  
 }
+
+/* */
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  position: relative;
+  width:150px;
+  height: 150px;
+  background-image: url('images/profile-pic-2.jpg');
+  transform: scale(1.1) rotate(0deg);
+  
+
 }
 .tag {
   background-color: #efefef;
@@ -86,10 +101,10 @@ header .profile-image:hover {
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  color: rgb(56, 149, 115);
 }
 .card {
-  margin: 30px;
+  margin: 10px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
