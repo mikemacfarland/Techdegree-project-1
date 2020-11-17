@@ -24,26 +24,29 @@ a:hover {
 /* Section Styles */
 
 .main-nav {
+  position: fixed;
   width: 100%;
   background: black;
   min-height: 30px;
-  padding: 10px;
-  position: fixed;
+  padding: 5px;
   text-align: center;
+  border-radius: 5px;
+  
 }
 .nav {
   display: flex;
   justify-content: space-around;
   font-weight: 700;
   list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
+  margin: auto;
+  
 }
 
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: #389573;
+    
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -52,23 +55,21 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color:#389573;
 }
 
 header {
-  opacity: .75;
   text-align: center;
-  background: url('images/rocky mountains.jpg') no-repeat top center ;
+  background: url('images/rocky-mountains.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-  
+
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
-  background-image: url('images/profile-pic-1.jpg');
   margin-top: 50px;
   display: block;
   margin-left:auto;
@@ -83,38 +84,56 @@ header .profile-image {
 
 /* */
 header .profile-image:hover {
-  position: relative;
   width:150px;
   height: 150px;
-  background-image: url('images/profile-pic-2.jpg');
   transform: scale(1.1) rotate(0deg);
-  
 
 }
 .tag {
-  background-color: #efefef;
+  opacity:.85;
+  background-color: #389573;
   color: black;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 5px;
+  border-radius: 10px;
   display: table;
   margin: 10px auto;
+  
 } 
 .location {
+  width: 275px;
   background-color: #222;
-  color: rgb(56, 149, 115);
+  color: #389573;
+  display: table;
+  padding: 5px 5px 5px;
+  border-radius:6px;
+  margin: auto;
+  opacity: .9;
 }
-.card {
+.content-card {
   margin: 10px;
-  padding: 20px 40px 40px;
+  padding: 20px 20px 20px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
+  background: #ababab;
+  border-bottom: 7.5px solid #cccccc;
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
-  border-color: #ff99ff;
+.hobbies-card{
+  margin: 10px;
+  padding: 20px 40px 40px;
+  max-width: 90%;
+  text-align: left;
+  background: #ababab;
+  border-bottom: 7.5px solid #cccccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.hobbies-card:hover{
+  border-color: #389573;
+}
+.content-card:hover {
+  border-color: #389573;
 }
 
 ul.skills {
@@ -132,7 +151,7 @@ ul.skills {
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #389573;
 }
 
 footer {
@@ -160,14 +179,14 @@ a.social {
   display: inline-block;
   text-indent: -9999px;
   margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px px;
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
+a.instagram {
+  background-image: url(images/instagram.svg);
 }
 a.linkedin {
   background-image: url(images/linkedin.svg);
@@ -181,6 +200,14 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
+
+/* phto styles */
+
+.mtb-photo{
+  Height: 50%;
+  width: 50%;
+}
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
