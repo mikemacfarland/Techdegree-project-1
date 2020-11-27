@@ -1,4 +1,4 @@
-/* Global Layout Set-up */
+/* GLOBAL SELECTOR */
 * { 
   box-sizing: border-box;
 } 
@@ -13,6 +13,38 @@ a {
 a:hover {
     color: #389573;
     transition: all 1s;
+}
+
+header {
+  background: linear-gradient(transparent, #303534 99%),
+              url('images/rocky-mountains.jpg') no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  line-height: 1.5;
+  font-size:1.2em;
+}
+ 
+header .profile-image {
+  margin-top: 50px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 15%;
+  border: 1.5px solid white;
+  transition: all 2s;
+}
+
+header .profile-image:hover {
+  width:150px;
+  height: 150px;
+  transform: scale(1.1) rotate(0deg);
+  
+}
+
+h1{
+  font-size: 2.5em;
 }
 
 body {
@@ -46,106 +78,7 @@ footer ul li {
   display: inline-block;
 }
 
-h1{
-  font-size: 2.5em;
-}
-
-header {
-  background: linear-gradient(transparent, #303534 99%),
-              url('images/rocky-mountains.jpg') no-repeat center;
-  background-size: cover;
-  overflow: hidden;
-  line-height: 1.5;
-  font-size:1.2em;
-}
- 
-header .profile-image {
-  margin-top: 50px;
-  display: block;
-  margin-left:auto;
-  margin-right:auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 15%;
-  border: 1.5px solid white;
-  transition: all 2s;
-}
-
-header .profile-image:hover {
-  width:150px;
-  height: 150px;
-  transform: scale(1.1) rotate(0deg);
-  
-}
-
 /* CLASS SELECTORS */
-
-.goals-card{
-  float: right;
-  margin-right: 5%;
-}
-
-.background-card{
-  float: left;
-  margin-left:5%;
-}
-
-.goals-card,
-.background-card {
-  margin-top: 20px;
-  padding: 20px 10px 50px 10px;
-  width: 44%;
-  height: 300px;
-  background: #ababab;
-  border-bottom: 10px solid #cccccc;
-  border-radius: 6px;
-  transition: all .5s;
-  font-size: 1.2em;
-}
-
-.goals-card:hover,
-.background-card:hover {
-  border-color: #389573;
-}
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.hobbies-card{
-  display: block;
-  margin-left:auto;
-  Margin-right:auto;
-  padding: 20px 40px 40px;
-  max-width: 90%;
-  text-align: left;
-  background: #ababab;
-  border-bottom: 7.5px solid #cccccc;
-  border-radius: 6px;
-  transition: all .5s;
-  font-size: 1.2em
-}
-
-.hobbies-card:hover{
-  border-color: #389573;
-}
-
-.location {
-  width: 275px;
-  background-color: #222;
-  color: #389573;
-  border-radius:6px;
-  margin: auto;
-  padding: 5px 0;
-  opacity: 80%;
-}
-
-.mtb-photo{
-  Height: 50%;
-  width: 50%;
-}
 
 .main-nav {
   width: 90%;
@@ -162,12 +95,11 @@ header .profile-image:hover {
   justify-content: space-around;
   font-weight: 700;
   list-style-type: none;
-} 
+  font-size: 1.1em;
+}  
 
-.nav .name {
-    margin-right auto;
-    display: block;
-    color: #389573;
+.main-nav ul {
+  padding-left: 0;
 } 
 
 .nav li {
@@ -188,8 +120,53 @@ header .profile-image:hover {
   margin: 10px auto;
 } 
 
+.location {
+  width: 275px;
+  background-color: #222;
+  color: #389573;
+  border-radius:6px;
+  margin: auto;
+  padding: 5px 0;
+  opacity: 80%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.goals-card{
+  float: right;
+  margin-right: 5%;
+}
+
+.background-card{
+  float: left;
+  margin-left:5%;
+}
+
+.goals-card,
+.background-card {
+  margin-top: 20px;
+  padding: 20px 10px 50px 10px;
+  width: 44%;
+  height: 360px;
+  background: #ababab;
+  border-bottom: 10px solid #cccccc;
+  border-radius: 6px;
+  transition: all .5s;
+  font-size: 1.4em;
+}
+
+.goals-card:hover,
+.background-card:hover {
+  border-color: #389573;
+  transition: 1s;
+}
+
 ul.skills {
-  text-align: center;
+  padding: 10px;
 }
 
 .skills li {
@@ -204,7 +181,7 @@ ul.skills {
   background: #389573;
 }
 
-/* social link classes */
+/* SOCIAL LINK CLASSES */
 
 a.social {
   display: inline-block;
@@ -232,39 +209,92 @@ a.social:hover {
   clear: both;
 }
 
-/* phto styles */
+
+ /*  HOBBIES PAGE */
+
+ /*  HOBBIES PAGE */
+
+ /*  HOBBIES PAGE */
 
 
 
+.hobbies-card{
+  display: block;
+  margin: auto;
+  padding: 20px 40px 40px;
+  max-width: 90%;
+  text-align: center;
+  background: #ababab;
+  border-bottom: 7.5px solid #cccccc;
+  border-radius: 6px;
+  transition: all .5s;
+  font-size: 1.2em
+}
+
+.hobbies-card ul{
+  padding-left:0px;
+}
+
+.hobby-tags li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #389573;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.hobbies-card:hover{
+  border-color: #389573;
+}
+
+.hobbies-img{
+  height: 400px;
+  width: 400px;
+  border-bottom: 7.5px solid #cccccc;
+  border-radius: 5px;
+}
+
+.hobbies-img:hover{
+  border-color: #389573;
+  transition: 1s;
+}
+
+.gallery li{
+  border: 5px;
+  display: inline-block;
+  padding: 5px;
+}
+
+/* HOBBIES PHOTO SYLES */
 
 
-/* @media styles */
+/* @MEDIA STYLES */
 
-@media screen and (max-width: 768px) {
-  
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+/* @MEDIA STYLES */
+
+/* @MEDIA STYLES */
+
+/* HOME PAGE @MEDIA STYLES */
+
+
+@media screen and (max-width: 1200px) {
+
+  body{
+    font-size: .92em;
   }
 
-  header {
-    min-height: 425px;
+  .goals-card,
+  .background-card {
+    padding-bottom:30px;
   }
+}
 
-  .nav {
-    max-width: 1200px;
-    padding: 0 30px;
-  }
+@media screen and (max-width: 1000px) {
 
   .goals-card,
   .background-card {
     float: none;
     width: 90%;
-    font-size: 1.3em;
     margin: 20px auto;
   }
 
@@ -275,33 +305,20 @@ a.social:hover {
   main {
     padding-top: 20px;
   }
+}
 
-  main p {
-    line-height: 1.6em;
+@media screen and (max-width: 500px) {
+
+  body{
+    font-size: .85em;
   }
 
-  footer {
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
+@media screen and (max-width: 500px) {
+
+  body{
+    font-size: .8em;
+  }
+  
   }
 
 }
-
-@media screen and (max-width: 720px) {
-
-
-  h1{
-    font-size: 1.7em;
-  }
-
-  header{
-    font-size: 1.1em;
-  }
-
-  .background-card{
-  }
-  .background-card,
-  .goals-card{
-    font-size: 1em;
-  }
