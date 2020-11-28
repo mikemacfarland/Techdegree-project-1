@@ -40,7 +40,6 @@ header .profile-image:hover {
   width:150px;
   height: 150px;
   transform: scale(1.1) rotate(0deg);
-  
 }
 
 h1{
@@ -80,6 +79,18 @@ footer ul li {
 
 /* CLASS SELECTORS */
 
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  font-size: 1.1em;
+}  
+
+.nav a:hover {
+  color:#389573;
+} 
+
 .main-nav {
   width: 90%;
   background:#303534 center;
@@ -90,24 +101,12 @@ footer ul li {
   line-height: 2.0;
 } 
 
-.nav {
-  display: flex;
-  justify-content: space-around;
-  font-weight: 700;
-  list-style-type: none;
-  font-size: 1.1em;
-}  
-
 .main-nav ul {
   padding-left: 0;
 } 
 
 .nav li {
   padding: 5px 5px;
-} 
-
-.nav a:hover {
-  color:#389573;
 } 
 
 .name-tag {
@@ -128,12 +127,6 @@ footer ul li {
   margin: auto;
   padding: 5px 0;
   opacity: 80%;
-}
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .goals-card{
@@ -165,8 +158,10 @@ footer ul li {
   transition: 1s;
 }
 
-ul.skills {
-  padding: 10px;
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .skills li {
@@ -189,7 +184,7 @@ a.social {
   margin-left: 5px;
   width: 50px;
   height: 50px;
-  background-size: 50px px;
+  background-size: 50px;
   opacity: .4;
   transition: all .5s;
 }
@@ -209,20 +204,17 @@ a.social:hover {
   clear: both;
 }
 
-
  /*  HOBBIES PAGE */
 
  /*  HOBBIES PAGE */
 
  /*  HOBBIES PAGE */
-
-
 
 .hobbies-card{
   display: block;
   margin: auto;
-  padding: 20px 40px 40px;
-  max-width: 90%;
+  padding: 20px 20px 20px;
+  width: 90%;
   text-align: center;
   background: #ababab;
   border-bottom: 7.5px solid #cccccc;
@@ -248,8 +240,8 @@ a.social:hover {
 }
 
 .hobbies-img{
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 600px;
   border-bottom: 7.5px solid #cccccc;
   border-radius: 5px;
 }
@@ -265,9 +257,6 @@ a.social:hover {
   padding: 5px;
 }
 
-/* HOBBIES PHOTO SYLES */
-
-
 /* @MEDIA STYLES */
 
 /* @MEDIA STYLES */
@@ -276,7 +265,6 @@ a.social:hover {
 
 /* HOME PAGE @MEDIA STYLES */
 
-
 @media screen and (max-width: 1200px) {
 
   body{
@@ -284,7 +272,7 @@ a.social:hover {
   }
 
   .goals-card,
-  .background-card {
+  .background-card{
     padding-bottom:30px;
   }
 }
@@ -312,13 +300,87 @@ a.social:hover {
   body{
     font-size: .85em;
   }
+}
 
 @media screen and (max-width: 500px) {
 
   body{
     font-size: .8em;
   }
-  
+
+}
+
+/* HOBBIES PAGE @MEDIA STYLES */
+
+@media screen and (max-width: 1415px) {
+  .hobbies-img{
+    height: 450px;
+    width: 450px;
+    border-bottom: 7.5px solid #cccccc;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .hobbies-img{
+    height: 420px;
+    width: 420px;
+    border-bottom: 7.5px solid #cccccc;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .hobbies-img{
+    height: 350px;
+    width: 350px;
+    border-bottom: 7.5px solid #cccccc;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .hobbies-img{
+    height: 300px;
+    width: 300px;
+    border-bottom: 7.5px solid #cccccc;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .hobbies-img{
+    height: 400px;
+    width: 400px;
+    border-bottom: 7.5px solid #cccccc;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .hobbies-img{
+    height: 300px;
+    width: 300px;
+    border-bottom: 7.5px solid #cccccc;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hobbies-img{
+    height: 280px;
+    width: 280px;
+    border-bottom: 7.5px solid #cccccc;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .hobbies-img{
+    height: 230px;
+    width: 230px;
+    border-bottom: 7.5px solid #cccccc;
+    border-radius: 5px;
   }
 
 }
