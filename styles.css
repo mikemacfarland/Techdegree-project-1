@@ -59,7 +59,7 @@ body {
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 20px 0 40px 0;
 }
 
 footer .copyright {
@@ -69,11 +69,12 @@ footer .copyright {
 
 footer ul {
   list-style-type: none;
-  margin: 0;
+  width: 90%;
   padding: 0;
+  margin: auto;
 }
 
-footer ul li {
+footer li {
   display: inline-block;
 }
 
@@ -129,18 +130,17 @@ footer ul li {
   opacity: 80%;
 }
 
-.goals-card{
+.goals{
   float: right;
   margin-right: 5%;
 }
 
-.background-card{
+.background{
   float: left;
   margin-left:5%;
 }
 
-.goals-card,
-.background-card {
+.card {
   margin-top: 20px;
   padding: 20px 10px 50px 10px;
   width: 44%;
@@ -150,12 +150,12 @@ footer ul li {
   border-radius: 6px;
   transition: all .5s;
   font-size: 1.4em;
-}
-
-.goals-card:hover,
-.background-card:hover {
   border-color: #389573;
   transition: 1s;
+}
+
+.card ul{
+  padding-left: 0;
 }
 
 .group:after {
@@ -181,7 +181,6 @@ footer ul li {
 a.social {
   display: inline-block;
   text-indent: -9999px;
-  margin-left: 5px;
   width: 50px;
   height: 50px;
   background-size: 50px;
@@ -271,22 +270,20 @@ a.social:hover {
     font-size: .92em;
   }
 
-  .goals-card,
-  .background-card{
+  .card{
     padding-bottom:30px;
   }
 }
 
 @media screen and (max-width: 1000px) {
 
-  .goals-card,
-  .background-card {
+  .card {
     float: none;
     width: 90%;
     margin: 20px auto;
   }
 
-  .background-card{
+  .background{
     margin-top: 0;
   }
 
